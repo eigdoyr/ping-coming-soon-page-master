@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <main>
+      <img class="logo" src="./images/logo.svg" alt="Ping logo" />
+      <h1 class="main__title">We are launching <span>soon!</span></h1>
+      <p class="main__lead">Subscribe and get notified</p>
+      <form action="submit" class="form__main">
+        <div class="form__input-text">
+          <label for="email" hidden>Your email address</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            aria-label="email"
+            class="form__input"
+            required
+            value="Your email address..."
+          />
+        </div>
+        <div class="form-submit">
+          <input type="submit" value="Notify Me" class="form-btn" />
+        </div>
+      </form>
+      <img
+        class="main__img"
+        src="./images/illustration-dashboard.png"
+        alt="Illustration Dashboard"
+      />
+    </main>
+    <footer>
+      <div class="footer__socials">
+        <ul class="footer__socials-list">
+          <li>
+            <a
+              href="https://facebook.com"
+              class="fa-brands fa-facebook-f fa-xs"
+              target="_blank"
+              rel="noopener"
+              aria-label="Ping facebook"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com"
+              class="fa-brands fa-twitter fa-xs"
+              target="_blank"
+              rel="noopener"
+              aria-label="Ping twitter"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://instagram.com"
+              class="fa-brands fa-instagram fa-xs"
+              target="_blank"
+              rel="noopener"
+              aria-label="Ping instagram"
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <small>&copy; Copyright Ping. All rights reserved.</small>
+    </footer>
+  </body>
+</html>
