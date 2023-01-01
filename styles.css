@@ -63,10 +63,12 @@ main,
 footer {
   text-align: center;
   padding: 5rem 1.5rem 1.5rem 1.5rem;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .logo {
-  width: 18%;
+  width: 3.5em;
 }
 
 .main__title {
@@ -90,11 +92,11 @@ h1 span {
 #email {
   border: 1px solid var(--pale-blue);
   border-radius: 50rem;
-  font-size: 0.75rem;
-  padding: 0.6rem 4rem;
+  font-size: 0.75em;
+  padding: 0.6em 4em;
   width: 100%;
   color: var(--pale-blue);
-  text-align: center;
+  text-align: left;
 }
 
 .form__main {
@@ -113,9 +115,14 @@ h1 span {
   color: var(--white);
   font-weight: 600;
   border-radius: 50rem;
-  font-size: 0.75rem;
-  padding: 0.75rem 4rem;
+  font-size: 0.75em;
+  padding: 0.75em 4em;
   width: 100%;
+  box-shadow: 1px 1px 15px var(--pale-blue);
+}
+
+.form-btn:hover{
+  opacity: 0.8;
 }
 
 .footer__socials-list {
@@ -136,7 +143,34 @@ h1 span {
   border-radius: 50%;
 }
 
+.fa-brands:hover{
+  background-color: var(--blue);
+  color: var(--white);
+}
+
 small {
   color: var(--gray);
   font-size: 0.65rem;
+}
+
+@media (width>= 768px) {
+  .main__title {
+    font-size: 3rem;
+  }
+  .main__lead {
+    font-size: 1.15rem;
+  }
+
+  .form__main {
+    flex-direction: row;
+  }
+  .form__input-text {
+    width: 100%;
+  }
+
+  #email,
+  .form-btn {
+    font-size: 0.8em;
+    padding: 0.9em 3.7em;
+    
 }
