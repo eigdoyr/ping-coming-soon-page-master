@@ -5,6 +5,7 @@
   --gray: hsl(0, 0%, 59%);
   --dark-blue: hsl(209, 33%, 12%);
   --white: hsl(0, 0%, 100%);
+  --green: hsl(100, 55%, 68%);
 }
 
 *,
@@ -119,10 +120,16 @@ h1 span {
   padding: 0.75em 4em;
   width: 100%;
   box-shadow: 1px 1px 15px var(--pale-blue);
+  max-height: 54.8px;
+  white-space: nowrap;
 }
 
-.form-btn:hover{
+.form-btn:hover {
   opacity: 0.8;
+}
+
+footer {
+  padding-top: 0;
 }
 
 .footer__socials-list {
@@ -143,7 +150,7 @@ h1 span {
   border-radius: 50%;
 }
 
-.fa-brands:hover{
+.fa-brands:hover {
   background-color: var(--blue);
   color: var(--white);
 }
@@ -151,6 +158,17 @@ h1 span {
 small {
   color: var(--gray);
   font-size: 0.65rem;
+}
+
+#error__msg {
+  color: var(--light-red);
+  font-size: 0.65rem;
+  font-style: italic;
+  text-align: left;
+}
+
+.hide {
+  display: none;
 }
 
 @media (width>= 768px) {
@@ -171,6 +189,6 @@ small {
   #email,
   .form-btn {
     font-size: 0.8em;
-    padding: 0.9em 3.7em;
-    
+    padding: 0.9em 3.5em;
+  }
 }

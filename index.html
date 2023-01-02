@@ -33,7 +33,7 @@
       <img class="logo" src="./images/logo.svg" alt="Ping logo" />
       <h1 class="main__title">We are launching <span>soon!</span></h1>
       <p class="main__lead">Subscribe and get notified</p>
-      <form action="submit" class="form__main">
+      <form id="form" name="form" action="#" class="form__main" novalidate>
         <div class="form__input-text">
           <label for="email" hidden>Your email address</label>
           <input
@@ -44,12 +44,17 @@
             class="form__input"
             required
             value="Your email address..."
+            onfocus="this.value=''"
           />
+          <p class="hide" id="error__msg">
+            Please provide a valid email address
+          </p>
         </div>
         <div class="form-submit">
-          <input type="submit" value="Notify Me" class="form-btn" />
+          <button type="submit" class="form-btn">Notify Me</button>
         </div>
       </form>
+
       <img
         class="main__img"
         src="./images/illustration-dashboard.png"
@@ -90,5 +95,6 @@
       </div>
       <small>&copy; Copyright Ping. All rights reserved.</small>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
